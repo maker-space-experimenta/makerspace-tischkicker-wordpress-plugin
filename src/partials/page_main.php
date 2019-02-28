@@ -10,7 +10,7 @@
 
 ?>
 
-<link href="<?php echo plugins_url() . '/makerspace-tischkicker/src/assets/styles/main.css' ?>" rel="stylesheet">
+<link href="<?php echo plugins_url() . '/makerspace-tischkicker-wordpress-plugin/src/assets/styles/main.css' ?>" rel="stylesheet">
 
 <div class="container-fluid mb-5">
     <div class="row">
