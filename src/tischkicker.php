@@ -14,4 +14,8 @@ class Tischkicker {
         require 'partials/page_main.php';
     }
 
+    public static function Page_Tischkicker_Add_Game () {
+        require 'partials/page_add_game.php';
+    }
+
 }

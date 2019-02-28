@@ -30,6 +30,14 @@ if ( ! class_exists( 'Makerspace_Tischkicker' ) ) {
                 'ms_tischkicker',
                 array('Tischkicker', 'Page_Tischkicker_Main')
             );
+
+            add_submenu_page(
+                'ms_tischkicker',
+                'Spiel erfassen',
+                'Spiel erfassen',
+                'read',
+                'ms_tischkicker_add_game',
+                array('Tischkicker', 'Page_Tischkicker_Add_Game'));
         }
 
         function register_script_styles () {
@@ -42,7 +50,19 @@ if ( ! class_exists( 'Makerspace_Tischkicker' ) ) {
         }
 
         public static function activate() {
+            global $wpdb;
 
+            $sql = "
+                CREATE TABLE IF NOT EXISTS makerspace_tischkicker_games (
+                  game_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                  player_one BIGINT(20) NOT NULL,
+                  player_two BIGINT(20) NOT NULL,
+                  approved BOOLEAN NOT NULL DEFAULT 0,
+                  game_date DATETIME
+                )
+            ";
+
+            $wpdb->get_results( $sql );
 
         }
 
