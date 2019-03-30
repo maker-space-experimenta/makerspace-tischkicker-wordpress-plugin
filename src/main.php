@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! class_exists( 'Makerspace_Tischkicker' ) ) {
 
-    require_once 'tischkicker.php';
+    require_once plugin_dir_path( __FILE__ ) . '/tischkicker.php';
 
     class Makerspace_Tischkicker {
 
@@ -58,7 +58,9 @@ if ( ! class_exists( 'Makerspace_Tischkicker' ) ) {
                   player_one BIGINT(20) NOT NULL,
                   player_two BIGINT(20) NOT NULL,
                   approved BOOLEAN NOT NULL DEFAULT 0,
-                  game_date DATETIME
+                  game_date DATETIME,
+                  result_player_one TINYINT(1) NOT NULL DEFAULT 0,
+                  result_player_two TINYINT(1) NOT NULL DEFAULT 0
                 )
             ";
 

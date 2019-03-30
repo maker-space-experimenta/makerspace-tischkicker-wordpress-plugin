@@ -34,5 +34,3 @@ Makerspace_Tischkicker::instance();
 
 register_activation_hook( __FILE__, array( 'Makerspace_Tischkicker', 'activate' ) );
 register_deactivation_hook( __FILE__, array( 'Makerspace_Tischkicker', 'deactivate' ) );
-
-
