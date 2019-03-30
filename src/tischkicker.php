@@ -31,28 +31,28 @@ class Tischkicker {
         $opponent_goals = 0;
         $my_goals = 0;
 
-        if ($_POST["ms-tk-opponent-goals-1"]) { $opponent_goals = 1; }
-        elseif ($_POST["ms-tk-opponent-goals-2"]) { $opponent_goals = 2; }
-        elseif ($_POST["ms-tk-opponent-goals-3"]) { $opponent_goals = 3; }
-        elseif ($_POST["ms-tk-opponent-goals-4"]) { $opponent_goals = 4; }
-        elseif ($_POST["ms-tk-opponent-goals-5"]) { $opponent_goals = 5; }
-        elseif ($_POST["ms-tk-opponent-goals-6"]) { $opponent_goals = 6; }
-        elseif ($_POST["ms-tk-opponent-goals-7"]) { $opponent_goals = 7; }
-        elseif ($_POST["ms-tk-opponent-goals-8"]) { $opponent_goals = 8; }
-        elseif ($_POST["ms-tk-opponent-goals-9"]) { $opponent_goals = 9; }
-        elseif ($_POST["ms-tk-opponent-goals-10"]) { $opponent_goals = 10; }
+        if ($_POST["ms-tk-opponent-goals-0"]) { $opponent_goals = 1; }
+        elseif ($_POST["ms-tk-opponent-goals-1"]) { $opponent_goals = 2; }
+        elseif ($_POST["ms-tk-opponent-goals-2"]) { $opponent_goals = 3; }
+        elseif ($_POST["ms-tk-opponent-goals-3"]) { $opponent_goals = 4; }
+        elseif ($_POST["ms-tk-opponent-goals-4"]) { $opponent_goals = 5; }
+        elseif ($_POST["ms-tk-opponent-goals-5"]) { $opponent_goals = 6; }
+        elseif ($_POST["ms-tk-opponent-goals-6"]) { $opponent_goals = 7; }
+        elseif ($_POST["ms-tk-opponent-goals-7"]) { $opponent_goals = 8; }
+        elseif ($_POST["ms-tk-opponent-goals-8"]) { $opponent_goals = 9; }
+        elseif ($_POST["ms-tk-opponent-goals-9"]) { $opponent_goals = 10; }
 
 
-        if ($_POST["ms-tk-my-goals-1"]) { $my_goals = 1; }
-        elseif ($_POST["ms-tk-my-goals-2"]) { $my_goals = 2; }
-        elseif ($_POST["ms-tk-my-goals-3"]) { $my_goals = 3; }
-        elseif ($_POST["ms-tk-my-goals-4"]) { $my_goals = 4; }
-        elseif ($_POST["ms-tk-my-goals-5"]) { $my_goals = 5; }
-        elseif ($_POST["ms-tk-my-goals-6"]) { $my_goals = 6; }
-        elseif ($_POST["ms-tk-my-goals-7"]) { $my_goals = 7; }
-        elseif ($_POST["ms-tk-my-goals-8"]) { $my_goals = 8; }
-        elseif ($_POST["ms-tk-my-goals-9"]) { $my_goals = 9; }
-        elseif ($_POST["ms-tk-my-goals-10"]) { $my_goals = 10; }
+        if ($_POST["ms-tk-my-goals-0"]) { $my_goals = 1; }
+        elseif ($_POST["ms-tk-my-goals-1"]) { $my_goals = 2; }
+        elseif ($_POST["ms-tk-my-goals-2"]) { $my_goals = 3; }
+        elseif ($_POST["ms-tk-my-goals-3"]) { $my_goals = 4; }
+        elseif ($_POST["ms-tk-my-goals-4"]) { $my_goals = 5; }
+        elseif ($_POST["ms-tk-my-goals-5"]) { $my_goals = 6; }
+        elseif ($_POST["ms-tk-my-goals-6"]) { $my_goals = 7; }
+        elseif ($_POST["ms-tk-my-goals-7"]) { $my_goals = 8; }
+        elseif ($_POST["ms-tk-my-goals-8"]) { $my_goals = 9; }
+        elseif ($_POST["ms-tk-my-goals-9"]) { $my_goals = 10; }
 
         global $wpdb;
 
